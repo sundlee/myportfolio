@@ -37,7 +37,7 @@ function imageSlideTimer() {
   plusImageSlides(1);
 }
 
-var iamgeTimer = setInterval(imageSlideTimer, 3000);
+var imageTimer = setInterval(imageSlideTimer, 3000);
 
 function plusImageSlides(n) {
   clearInterval(imageTimer);

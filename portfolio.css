@@ -7,7 +7,7 @@
 
 body {
   box-sizing: border-box;
-  -web-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   word-break: break-all;
   font-family: 'Heebo', sans-serif;
@@ -128,7 +128,7 @@ ul {
   line-height: 50px;
 }
 
-.header-area > .navbar > .navbar-menu > .nav-item:hover {
+.header-area > .navbar > .navbar-menu > .nav-item:hover * {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -380,8 +380,52 @@ section {
   background-image: linear-gradient(to right, royalblue, aquamarine);
 }
 
+/* services area */
+.services-area {
+  height: auto;
+  background-color: #f9f9ff;
+}
 
+.services-area > .container {
+  text-align: center;
+}
 
+.services-area > .container > .item {
+  height: auto;
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
+  text-align: left;
+  transition: all 0.5s ease;
+}
+
+.services-area > .container > .item:hover {
+  transform: scale(1.015);
+	box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.services-area > .container > .item > .icon {
+  padding: 10px 0;
+  display: inline-block;
+}
+
+.services-area > .container > .item > .icon > span > i {
+  font-size: 48px;
+  color: #aaa;
+}
+
+.services-area > .container > .item > .service {
+  font-size: 32px;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+.services-area > .container > .item > .content {
+  font-size: 16px;
+  font-family: 'Noto Sans KR', sans-serif;
+  letter-spacing: 1.5px;
+  padding: 10px 0;
+}
 
 
 
