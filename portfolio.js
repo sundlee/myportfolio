@@ -40,10 +40,16 @@ function imageSlideTimer() {
 var iamgeTimer = setInterval(imageSlideTimer, 3000);
 
 function plusImageSlides(n) {
+  clearInterval(imageTimer);
+  imageTimer = setInterval(imageSlideTimer, 3000);
+
   showImageSlides(imageSlideIndex += n);
 }
 
 function currentImageSlide(n) {
+  clearInterval(imageTimer);
+  imageTimer = setInterval(imageSlideTimer, 3000);
+
   showImageSlides(imageSlideIndex = n);
 }
 
